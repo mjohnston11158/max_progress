@@ -17,3 +17,7 @@ else:
     print('$',a-b,"you took a loss!")
     print("back to the lab!")
     
+
+def balance(balance):
+    balance = a-b
+    return balance 
