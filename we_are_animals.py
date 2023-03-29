@@ -14,8 +14,8 @@ if a > b:
     
 
 else:
-    print('$',a-b,"you took a loss!")
-    print("back to the lab!")
+    print('$',a-b,"you took a loss!\nback to the lab!")
+    
     
 
 def balance(balance):

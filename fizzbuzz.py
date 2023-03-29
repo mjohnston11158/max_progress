@@ -6,14 +6,10 @@ for multiples of 5 print buzz
 for multiples of 5 and 3 print fizzbuzz
 
 """
-
-
-for i in range(51):
-    if i % 3 == 0 and i % 5 == 0:
-        print("fizzbuzz ", i)
-
-    elif i % 3 == 0:
-        print("fizz ", i)
-
+for i in range(25):
+    if i % 3 == 0:
+        print("FiZZ!")
     elif i % 5 == 0:
-        print("buzz ", i)
+        print("BuZZ!")
+    elif i % 5 or 3 == 0:
+        print("FiZZBuZZ!")
