@@ -27,7 +27,7 @@ pitch = "What's the flavor? "
 
 menu =  "\n\n     MENU    \n Diamond Chocolate Coffee $40.55\n Erupted Volcano Coffee $1million\n Robot Mansion Coffee $99.99\n\n"
 
-
+flavors = [Diamond_Chocolate, Erupted_Volcano, Robot_Mansion]
 
 
 
@@ -41,7 +41,7 @@ if order == Diamond_Chocolate.lower():
                 print(str(quantity) + " Diamond Chocolate Coffees Coming right up!\n"+ outro)
         else:
                 print( "\nOne Diamond Chocolate Coffee Coming right up!\n" + outro)
-
+                exit()
 elif order == Erupted_Volcano.lower():
         quantity = int(input("how many you want?"))
         price = 1000000
@@ -50,17 +50,21 @@ elif order == Erupted_Volcano.lower():
         if quantity > 1:
                 print(str(quantity) + " Erupted Volcano Coffees Coming right up!\n" + outro)
         else:
-                print( "\nOne Erutpted Volcano Coffee COming right up!\n" + outro)        
-
+                print("\nOne Erutpted Volcano Coffee COming right up!\n" + outro)
+                exit()        
 elif order == Robot_Mansion.lower():
         quantity = int(input("how many you want?"))
-        price = 90.99
+        price = 99.99
         total = quantity * price
         outro = "that will be $" + str(total) + " plus tax"
         if quantity > 1:
                 print(str(quantity) + " Robot Mansion Coffees Coming right up!\n" + outro)
         else:
                 print( "\nOne Robot Mansion Coffee COming right up!\n" + outro)
+                exit()
+
+
+
 
 
 
